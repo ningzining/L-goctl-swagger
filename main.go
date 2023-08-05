@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/ningzining/L-goctl-swagger/action"
 	"os"
 	"runtime"
 
 	"github.com/urfave/cli/v2"
-	"github.com/zeromicro/goctl-swagger/action"
 )
 
 var (
