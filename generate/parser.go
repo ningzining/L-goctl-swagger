@@ -267,6 +267,7 @@ func renderServiceRoutes(service spec.Service, groups []spec.Group, paths swagge
 
 					refTypeName := strings.Replace(route.ResponseType.Name(), "[", "", 1)
 					refTypeName = strings.Replace(refTypeName, "]", "", 1)
+					refTypeName = strings.Replace(refTypeName, "*", "", 1)
 
 					//respSchema.Type = "array"
 					//respSchema.Items = &swaggerItemsObject{Ref: fmt.Sprintf("#/definitions/%s", refTypeName)}

@@ -38,5 +38,5 @@ service system-api{
     get /userInfo (UserInfoReq) returns (UserInfoResp)
     @doc "用户列表"
     @handler userList
-    get /userList (UserListReq) returns ([]UserListResp)
+    get /userList (UserListReq) returns ([]*UserListResp)
 }
